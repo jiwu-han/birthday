@@ -4,8 +4,14 @@
 	<title>登录</title>
 	<link rel="shortcut icon" href="https://jiwu-han.github.io/logo/gift.png">
 	<style type="text/css">
+		body{
+			
+			background-repeat:no-repeat ;
+			background-size:100% 100%;
+			background-attachment: fixed;
+		}
 		input{
-			background-color: #FFE4E1
+			background-color: #FFF
 		}
 		.main{
 /* 			float: left; */
@@ -18,13 +24,13 @@
 		    	text-align: center;
 		    	margin: 0 auto;
 		    	margin-top: 5%;
-		    	background: #FFB6C1;
+		    	background: #00000080;
 		    	padding: 60px 60px;
 		}
 		#button1{
 			float: right;
 			width: 160px; 
-			background: #FFB6C1;
+			background: #000;
 			font-size: 20px; 
 			border-radius: 15px; 
 /* 			left: 40%; 
@@ -32,7 +38,7 @@
 			vertical-align: middle;
 			position: absolute;
 			outline:none;
-			color: #696969;
+			color: #FFF;
 		}
 		#input{
 			float: right;
@@ -42,7 +48,7 @@
 /* 			left: 30%; 
 			top: 20%;  */
 			position: absolute;
-			border: 1px solid #e2e2e2;
+			border: 1px solid #696969;
 			height: 30px;
 /* 			float: left; */
 			vertical-align: middle;
@@ -53,13 +59,8 @@
 			padding: 0 0 0 40px;
 		}
 		#p{
-			font-size: 70px;
-		}
-		.mag{
-			float: right;
-			left: 30%;
-		    	text-align: center;
-		    	margin: 0 auto;
+			font-size: 80px;
+
 		}
 	</style>
 	<script type="text/javascript">
@@ -72,13 +73,13 @@
 		}
 	</script>
 </head>
-<body style="background-color: #FFC0CB">
+<body background="https://jiwu-han.github.io/logo/cake2.jpg">
 	<div>
-		<p id = 'p' align="center">Happy birthday !</p>
+		<font><p id = 'p' align="center">Happy birthday !</p></font>
 	</div><hr>
 	<div class="main">
 		<from action=''>
-			<input id = 'input' type="password" name="password" placeholder="请输入名字" ><br><br><br><br><br>
+			<input id = 'input' type="user" name="password" placeholder="请输入名字" ><br><br><br><br><br>
 			<a href="https://jiwu-han.github.io/birthday/LiJiaMin.html"><button id='button1' onclick="land();" >进入</button></a>
 		</from>
 	</div>
@@ -86,9 +87,10 @@
 <!-- 		<div>
 			<img src = 'https://jiwu-han.github.io/logo/cake.jpg' width=100% height=100%>
 		</div> -->
-		<div>
+		<!-- <div>
 			<img src = 'https://jiwu-han.github.io/logo/cake2.jpg' width=100% height=100%>
-		</div>
+		</div> -->
 	</div>
 </body>
 </html>
+
