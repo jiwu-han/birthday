@@ -12,9 +12,6 @@
 			background-size:100% 100%;
 			background-attachment: fixed;
 		}
-		input{
-			background-color: #FFF
-		}
 		.main{
 /* 			float: left; */
 			height: 150px;
@@ -42,7 +39,8 @@
 			outline:none;
 			color: #FFF;
 		}
-		#input{
+		input{
+			background-color: #FFF;
 			float: right;
 			width: 30% * 30%; 
 			height: 40px; 
@@ -67,13 +65,14 @@
 	</style>
 	<script type="text/javascript">
 		function land() {
-			var word =document.getElementById("input").value;
-			if (word == '李佳敏'){
-				window.alert('生日快乐，'+word);
+			var user =document.getElementById("user").value;
+			var pass =document.getElementById("password").value;
+			if (user == '李佳敏' || pass == 'ljm123'){
+				window.alert('生日快乐，'+user);
 				window.location.href="https://jiwu-han.github.io/birthday/LiJiaMin.html";
 			}
-			else if (word == ''){
-				window.alert('名字不能为空');
+			else if (user == '' || pass == ''){
+				window.alert('用户名与密码不能为空');
 			}
 			else {
 				window.alert('你不是本人吧！');
@@ -87,7 +86,8 @@
 	</div><hr>
 	<div class="main">
 		<from action=''>
-			<input id = 'input' type="user" name="password" placeholder="请输入名字" ><br><br><br><br><br>
+			<input id = 'user' type="user" name="user" placeholder="请输入名字" ><br><br>
+			<input id = 'password' type='password' name='password' placeholder='请输入密码'><br><br><br>
 			<button id='button1' onclick="land();" >进入</button>
 		</from>
 	</div>
