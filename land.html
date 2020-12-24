@@ -67,11 +67,17 @@
 	</style>
 	<script type="text/javascript">
 		function land() {
-			var word =document.getElementsByName("password");
-			for (var i = 0, j = word.length; i < j; i++){
-			var user = word[i].value;
+			var word =document.getElementById("input").value;
+			if (word == '李佳敏'){
+				window.alert('生日快乐，'+word);
+				window.location.href="https://jiwu-han.github.io/birthday/LiJiaMin.html";
 			}
-			window.alert('生日快乐，'+ user)
+			else if (word == ''){
+				window.alert('名字不能为空');
+			}
+			else {
+				window.alert('你不是本人吧！');
+			}
 		}
 	</script>
 </head>
@@ -82,7 +88,7 @@
 	<div class="main">
 		<from action=''>
 			<input id = 'input' type="user" name="password" placeholder="请输入名字" ><br><br><br><br><br>
-			<a href="https://jiwu-han.github.io/birthday/LiJiaMin.html"><button id='button1' onclick="land();" >进入</button></a>
+			<button id='button1' onclick="land();" >进入</button>
 		</from>
 	</div>
 </body>
